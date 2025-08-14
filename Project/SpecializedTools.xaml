@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.SpecializedTools"
+             Title="SpecializedTools"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Margin" Value="5,5"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="10" BackgroundColor="#222">
+
+            <!-- MENTAL -->
+            <Frame BackgroundColor="#313131">
+                <Label Text="MENTAL" FontAttributes="Bold" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
+            </Frame>
+
+            <!-- Apothecary Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="apothecary"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Apothecary Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :      60s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Increases the probability of triggering status"/>
+                        <Label Text="buildup when attacking with weapons that"/>
+                        <Label Text="induce abnormal statuses."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Bandit Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="bandit" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Bandit Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Causes monsters to drop rare trade-in items"/>
+                        <Label Text="when you attack them."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Challenger Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="challenger" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Challenger Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Prompts monsters to target you more often"/>
+                        <Label Text="and makes them easier to lure. The effect"/>
+                        <Label Text="expires if you are attacked."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Dragonproof Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="dragonproof" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Dragonproof Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    120s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 300s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Reduces Dragon damage. Nullifies"/>
+                        <Label Text="Dragonblight, and powers up your weapon's"/>
+                        <Label Text="dragon properties."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Evasion Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="evasion" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Evasion Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :     90s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 300s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Increases the invulnerability window while"/>
+                        <Label Text="evading and grants a temporary attack"/>
+                        <Label Text="boost for evading a monster attack"/>
+                        <Label Text="at the very last moment."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Fireproof  Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="fireproof" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Fireproof Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Reduces Fire Damage, prevents Fireblight"/>
+                        <Label Text="and Blastblight, and prevents damage"/>
+                        <Label Text="from hot environments."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Ghillie Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="ghillie" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Ghillie Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    120s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 300s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Conceals you from enemy view temporarily."/>
+                        <Label Text="The effect expires if you perform an attack"/>
+                        <Label Text="or take damage."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Glider Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="glider" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Glider Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 120s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Increases jump airtime and grants the power"/>
+                        <Label Text=" to ride strong winds. Also makes it easier"/>
+                        <Label Text="to mount monsters."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Iceproof Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="iceproof" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Iceproof Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Reduce ice damage. Also nullifies iceblight,"/>
+                        <Label Text="cold effects and mobility reduction from"/>
+                        <Label Text="deep snow."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Immunity Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="immunity" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Immunity Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    120s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Removes and nullifies all abnormal status"/>
+                        <Label Text="effects for the duration of the effect."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Impact  Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="impact" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Impact Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :      90s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 360s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Adds a stun effect to most attacks or"/>
+                        <Label Text="increases the potency of an existing stun"/>
+                        <Label Text="effect."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Rocksteady Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="rocksteady" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Rocksteady Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :      90s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 360s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Eliminates damage reactions, prevents"/>
+                        <Label Text="wind effects, protects your hearing, and"/>
+                        <Label Text="grants tremor resistance. You also receive"/>
+                        <Label Text="less damage from attacks."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Temporal Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="temporal" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Temporal Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    120s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 300s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Nullifies damage from powerful attacks"/>
+                        <Label Text="by automatically evading."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Thunderproof Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="thunderproof" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Thunderproof Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Reduces thunder damage and nullifies "/>
+                        <Label Text="thunderblight and paralysis"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Vitality Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="vitality" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Vitality Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    120s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 360s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Negates a fixed amount of Damage, after"/>
+                        <Label Text="which the effect expires."/>
+                        <Label Text="This tool effectively adds to the Health bar."/>
+                        <Label Text=""/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Waterproof Mantle -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="waterproof" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Waterproof Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Reduces water damage, nullifies waterblight,"/>
+                        <Label Text=" reduces mobility restrictions in muck and"/>
+                        <Label Text="negates for them entirely for deep water."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- BOOSTER -->
+            <Frame BackgroundColor="#313131">
+                <Label Text="BOOSTER" FontAttributes="Bold" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
+            </Frame>
+
+            <!-- Affinity Booster -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="booster" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Affinity Booster" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :      60s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Places a smoker that increases affinity."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Cleanser Booster -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="Booster" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Cleanser Booster" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :      60s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Places a smoker that removes any"/>
+                        <Label Text="abnormal status effects and elemental blights"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Health Booster -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="Booster" HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Health Booster" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect Duration :      60s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Recharge Times : 180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                        <Label Text="Places a smoker that gradually restores your"/>
+                        <Label Text="health."/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

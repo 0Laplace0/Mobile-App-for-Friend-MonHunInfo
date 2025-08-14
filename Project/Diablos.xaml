@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Diablos"
+             Title="Diablos"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="diablos.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Diablos are large, bipedal wyverns with powerful armor plating covering much of their body. Their most noteworthy feature is a pair of massive, solid bull-like horns above their red eyes. Diablos also possess a pair of tusk-like fangs and a large, spiny neck frill. Their tail ends with a heavy, studded club that can be used to ward off attackers. Diablos stand on a pair of stocky, wide-set legs and possess a broad upper body complete with thick, muscular wings."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Diablos are herbivores, known to feed on the plentiful cacti of the desert. Despite this however, they are wildly aggressive and extremely territorial, and will pursue anything which enters their territory. Diablos are known to use their horns as weapons against attackers, but will also use them in bouts against other Diablos in battles for territory or mating rights. Diablos typically avoid flight for the purpose of transportation, as a disproportionally high mass prevents them from effectively flying for long periods of time. Instead, Diablos will use their wings to free themselves when trapped in the sand."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Diablos' chief adaptation is its twin horns. Both are strong and sharp, witnessed phenomenon in the New World shows that these horns are strong enough to easily overpower a Barroth's scalp in a physical clash, but they wear constantly. Diablos has blunt claws on its wings, strong neck muscles that allow it to support its bulky head even while charging, and a pair of strong hind legs that help it to burrow through desert sand. Such powerful muscles also make it formidable in combat, having shown to be capable of flinging over the massive Glavenus with ease. Although Diablos cannot launch projectiles from a distance, it more than makes up for it with its extreme speed and devastating blows. Diablos' thick tail serves as a club for self-defense, capable of breaking solid rock. Diablos' shell and spines are perfect for protecting Diablos from any threats it may face."/>
+            <BoxView/>
+            <Label Text="Some rare individuals have grown longer horns, more developed spikes ,a reddish tint, use a digging technique that allows it to throw rocks into the air as it digs preventing followers and harming target alike, and having a roar louder than any other Diablos besides rare female individuals with a even louder roar."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="blackdiablos.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Black Diablos" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="bloodbath.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Bloodbath Diablos" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="apexdiablos.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Apex Diablos" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="gilded.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Gilded Diablos" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

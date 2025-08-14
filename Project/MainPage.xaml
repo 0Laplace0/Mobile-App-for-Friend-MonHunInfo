@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.MainPage"
+             Title="Monster"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BackgroundColor" Value="#313131"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" Padding="10" Spacing="10" BackgroundColor="#222">
+
+            <!-- Rathalos -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Rathalos"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="rathalosicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Rathalos" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Flying Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="water" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="ice" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Rathian -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Rathian"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="rathianicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Rathian" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Flying Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="water" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Fatalis -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Fatalis"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="fatalisicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Fatalis" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Elder Dragon" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="fire" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Kushala Daora -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Kushala"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="kushalaicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Kushala Daora" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Elder Dragon" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Nargacuga -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Nargacuga"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="nargacugaicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Nargacuga" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Flying Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="fire" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Tigrex -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Tigrex"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="tigrexicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Tigrex" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Flying Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Diablos -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Diablos"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="diablosicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Diablos" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Flying Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="ice" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Rajang -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Rajang"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="rajangicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Rajang" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Fanged Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="ice" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Lagiacrus -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Lagiacrus"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="lagiacrusicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Lagiacrus" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Leviathan" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="fire" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Zinogre -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Zinogre"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="zinogreicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Zinogre" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Fanged Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="ice" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="water" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Barioth -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Barioth"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="bariothicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Barioth" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Flying Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="fire" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Deviljho -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Deviljho"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="deviljhoicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Deviljho" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Flying Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="fire" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="water" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="ice" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Mizutsune -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Mizutsune"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="mizutsuneicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Mizutsune" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Leviathan" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Brachydios -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Brachydios"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="brachydiosicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Brachydios" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Brute Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="ice" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="water" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Glavenus -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Glavenus"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="glavenusicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Glavenus" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Brute Wyverns" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="water" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="ice" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Nergigante -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Nergigante"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="nergiganteicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Nergigante" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Elder Dragon" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Velkhana -->
+            <Frame>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Velkhana"/>
+                </Frame.GestureRecognizers>
+
+                <HorizontalStackLayout>
+                    <Frame BackgroundColor="#b9b9b9" CornerRadius="50" HeightRequest="95" WidthRequest="95">
+                        <Image Source="velkhanaicon.png" HeightRequest="70" WidthRequest="70"/>
+                    </Frame>
+
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                        <Label Text="# Velkhana" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+                        <Label Text="Species     : Elder Dragon" FontAttributes="Bold"/>
+                        <HorizontalStackLayout Spacing="5">
+                            <Label Text="Weakness : " FontAttributes="Bold"/>
+                            <Image Source="fire" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="thunder" HeightRequest="20" WidthRequest="20"/>
+                            <Image Source="dragon" HeightRequest="20" WidthRequest="20"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

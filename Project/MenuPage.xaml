@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.MenuPage"
+             Title="MenuPage"
+             BackgroundColor="#2c2c2c">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackLayout Padding="10">
+            <Image Source="flagship.jpg" WidthRequest="350" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Padding="20" Spacing="5">
+
+            <Button Text="Monster" TextColor="#a1a1a1" FontSize="20"
+                    BackgroundColor="#2c2c2c"
+                    ImageSource="*"
+                    HorizontalOptions="StartAndExpand"
+                    x:Name="monster"
+                    Clicked="monster_Clicked"/>
+
+            <Button Text="Skills" TextColor="#a1a1a1" FontSize="20"
+                    BackgroundColor="#2c2c2c"
+                    ImageSource="*"
+                    HorizontalOptions="StartAndExpand"
+                    x:Name="skills"
+                    Clicked="skills_Clicked"/>
+
+            <Button Text="Specialized Tools" TextColor="#a1a1a1" FontSize="20"
+                    BackgroundColor="#2c2c2c"
+                    ImageSource="*"
+                    HorizontalOptions="StartAndExpand"
+                    x:Name="specializedtools"
+                    Clicked="specializedtools_Clicked"/>
+
+            <Button Text="Items" TextColor="#a1a1a1" FontSize="20"
+                    BackgroundColor="#2c2c2c"
+                    ImageSource="*"
+                    HorizontalOptions="StartAndExpand"
+                    x:Name="items"
+                    Clicked="items_Clicked"/>
+            
+            <Button Text="Random Quest" TextColor="#a1a1a1" FontSize="20"
+                                BackgroundColor="#2c2c2c"
+                                ImageSource="*"
+                                HorizontalOptions="StartAndExpand"
+                                x:Name="ramdom"
+                                Clicked="ramdom_Clicked"/>
+            
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Rajang"
+             Title="Rajang"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="rajang.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Rajang strongly resembles the Blangonga, a large ape-like beast in appearance and movement. It even borrows some attacks from the Blangonga. However, notable differences include Rajang's broader muscles, large horns, hairy tail tip and its ability to use electricity-based attacks. The Rajang is black in color, while it's eyes are a crimson color, and it's horns are gold. When enraged, much of the fur on their front body rises and becomes gold."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Rajang are at best described as being ultra-aggressive, willing to attack and kill anything that approaches them, especially if encountered in locations the Rajang considers its turf. In the New World, it's shown to be willing to challenge any monsters regardless of status or size difference, and will usually tie with if not overpower such monsters in Turf Wars."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Rajang is one of only a handful of monsters able to wield deadly lightning. How it produces its charge is an electrical inner organ. Rajang are extremely fast and nimble even for their size. Rajang exhibits extreme physical strength, easily knocking a hunter off their feet and into the air. When golden, Rajang is even faster and more deadly than its already powerful base form. In this enraged state, Rajang is on par with Elder Dragons like Teostra, Lunastra, Kushala Daora and Ruiner Nergigante. It is believed that the tail of the Rajang has something to do with its electrical golden powers, as when the tail is cut, it loses its golden power instantly, though this only applies to regular Rajang. After permanently losing their tail, some Rajang stay in their golden forms and are known to be extremely violent and powerful, even by Rajang standards."/>
+            <BoxView/>
+            <Label Text="Just recently, it was discovered that Rajang have a unique defense against threats. When in danger, they will increase the strength in their arm and legs and they will be able to deal more damage and move even faster. This unique adaptation can also harden the muscles in its arms to drastically increase its defensive capabilities, deflecting nearly all attacks. Interestingly, their arms and legs will glow red indicating this. They can only do this when enraged, however, and should their tail sustain enough damage, will instantly lose this enhanced state. It is called its Rampage Mode."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="furious.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Furious Rajang" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="enma.png" HeightRequest="200" WidthRequest="200"/>
+            <Label Text="Enma Rajang" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="hcrajang.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Harecore Rajang" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

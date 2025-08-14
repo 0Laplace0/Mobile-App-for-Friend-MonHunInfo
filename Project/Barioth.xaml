@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Barioth"
+             Title="Barioth"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="barioth.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Barioth is a quadrupedal Flying Wyvern, with a head that resembles a saber-toothed cat. Its body is mostly covered with icy white plates and spikes along its neck, spine, and tail. Its face features two massive, curved tusks of an amber coloration. Its forelegs are longer and more powerful than its back legs, with deadly spikes along its wings, as well as three large claws. Barioth's tail is forked and ridged with spikes"/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Barioth are skilled hunters that are surprisingly agile for their size. When feeding, these wyverns prefer to eat the soft internal organs of their prey when compared to tougher flesh. During their Breeding Season, male Barioths will show off their impressive tusks to attract females to mate with. Sometimes males will invade the territory of a female in order to mate with them. This behavior, however, is not without its risks, as females will attack males if they have already mated or simply aren't impressed. After a female Barioth has mated it will find a nice secluded cave to raise its offspring in. Females are viviparous, becoming pregnant and then having 2-3 fur covered young that hide in the caves of the Tundra. Interestingly, each Barioth has its own unique way of fighting."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Barioth are accustomed to the Tundra and the polar regions. Their pelts, which are colored pure white, provide camouflage that easily allows them to ambush prey, or even top predators, in the blinding snow. They possess extremely sharp front canines which can pierce through the hides of Popo like soft butter, causing them to bleed profusely from the resulting wound. They have razor-sharp claws which deal heavy damage to even the toughest of monsters, and can mince anything in as little as a few slices. These claws and spikes also aid Barioth in scaling the slippery, steep, glaciers that make up its home. Its squinted eyes have evolved to compensate for the blinding glare created by the sun reflecting off the snow during the day. Unlike other Flying Wyverns, Barioth's wings are very sleek and flexible, allowing it to perform amazing maneuvers while flying. The nature of its wings allows Barioth to hover in one spot for long periods of time, as well as perform complete 180 degree turns mid flight."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="frostfang.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Frostfang Barioth" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="frozen.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Frozen Barioth" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Rathian"
+             Title="Rathian"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="rathian.png" HeightRequest="200" WidthRequest="300"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Rathian is a medium-sized true flying wyvern similar in looks to her male counterpart, Rathalos. Her hide is a dull, muted green in contrast to the Rathalos's deep red, and her lower mandible features a long, protruding chin spike. Her upper back and wingtips are covered in a moss-like fur not seen on the Rathalos, and while her clubbed tail lacks bony spikes, it makes up for this with the presence of sharp and highly poisonous needles, which she can use to poison foes upon contact."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Rathian is very territorial, choosing to patrol from ground while her Rathalos mate patrols from the sky. She will become very aggressive to potential threats, especially when in close proximity to her nest and young. Rathian and Rathalos will always go after hunters that are carrying their eggs."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="The most notable feature which differs from the normal variation of Rathian is its pink coloration, which is easily seen in the jungle or forest canopy. As such, these wyverns have become much more powerful and aggressive, exhibiting faster and stronger attacks to kill their prey before it can escape. What causes their pink coloration is unknown, but theory suggests it is a genetic mutation."/>
+            <BoxView/>
+            <Label Text="In the Old World some rare individuals have a deep purple tint on their wings, body and claws.They also have more spikes on their back and tail along with the most powerful flame sacs of all known Raths by being able to create a large fireball that ends with an explosion larger than the creature itself. "/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="goldrathian.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Gold Rathian" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="pinkrathian.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Pink Rathian" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="apexrathian.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Apex Rathian" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

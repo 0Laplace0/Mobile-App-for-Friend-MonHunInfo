@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Zinogre"
+             Title="Zinogre"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="zinogre.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Zinogre is a quadrupedal monster with superficially lupine features. It has highly developed limbs, sharp fangs and claws. Its body is covered in turquoise scales, whitish fur, and tan bony spikes, and it has two prominent horns. Closer observation of its horns and the spikes on its back reveal that they are porous, presumably for hosting Thunderbugs when the monster charges itself."/>
+            <BoxView/>
+            <Label Text="When charged with electricity, the spikes on its back and its fur will stick up, and many of the bony and furred parts of its body will start to glow bright blue."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Zinogre are solitary hunters, roaming their territory for prey. They are highly aggressive and will attack intruders on sight."/>
+            
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="The average size of an adult Zinogre is approximately 1455.4cm. Zinogre seems very wolf-like if one looks at its face, and has a very muscular set of forelimbs - very comparable to those of big cats. It has surprising agility for such a large monster, similar to Nargacuga. It has sharp claws attached to strong muscular fore-limbs, which are used to deliver a fatal blow to prey and hunters. It also helps them to climb mountains and rocky terrain. They are also very sturdy creatures, taking brutal attacks from its competitors, before retaliating with equal ferocity."/>
+            <BoxView/>
+            <Label Text="It can also harness the power of electricity, much like a Lagiacrus, using it to take down larger prey and to defend itself and its territory. Thunderbugs are seen gathering around Zinogre when it is charging electricity; they may act as a source of energy. Also, Gargwa are known to eat Thunderbugs, so it is possible that Zinogre has a special relationship with Thunderbugs. As Zinogre preys on Gargwa, Thunderbugs become safe, simply by flying around in close proximity to a Zinogre. Zinogre can exploit this by absorbing the energy emitted by the bugs during battle, granting it special abilities. Thunderbugs might glow blue instead of their normal color to indicate that they have allied with a Zinogre. If you look closely at a Zinogre, you can see an energy field around it. Juvenile Zinogre has more hair on their bodies compared to adults and is white in color. It is believed that the increased hair protects the juvenile's shell and helps speeds up the storage of electricity. This fur will shed as the juvenile Zinogre matures into adulthood. Whenever they become enraged their claws somehow change shape and the reason for this greatly puzzles scientists. In a supercharged state, they seem to glow, internally and externally. When supercharged the spikes on their backs erect in order to release excess electricity so that they don't injure themselves or possibly die from too much electricity surging in their bodies. When and if they do die in this state the Thunderbugs will flee, sensing their protector is dead and will seek another Zinogre to protect them."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="stygian.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Stygian Zinogre" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="thunderlord.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Thunderlord Zinogre" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="apexzinogre.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Apex Zinogre" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

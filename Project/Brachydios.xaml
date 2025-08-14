@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Brachydios"
+             Title="Brachydios"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="brachydios.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Brachydios is easily identifiable by its glowing, green slime-covered horn and fists, as well as its shiny, armored hide covered in many plates and ridges made of obsidian. Unlike other Brute Wyverns, Brachydios sports a pair of long, highly developed forelimbs that it uses as its primary means of defense. Despite initial appearances, Brachydios does possess claws on its forearms that are tucked away underneath, and serve no apparent purpose in battle."/>
+            <BoxView/>
+            <Label Text="When charged with electricity, the spikes on its back and its fur will stick up, and many of the bony and furred parts of its body will start to glow bright blue."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Zinogre are solitary hunters, roaming their territory for prey. They are highly aggressive and will attack intruders on sight."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="The symbiotic slime-mold is easily one of the most unique and defining feature of the Brachydios. The theropod's armored shell is hardened to protect against the explosive blasts that the mold creates on impact. A Brachydios's skin is similar to that of a thermos flask, giving it the ability to withstand both extreme heat and cold. Brachydios's body is the only place this mold can survive without turning explosive. When attacking, Brachydios constantly scrapes copious amounts of this mold off of its body, causing it to deplete. However, it seems that the beast's saliva acts as a powerful stimulant, which causes the mold to almost instantly replenish itself. The mold seems to have chemical reaction when enraged, as even areas of this Brute Wyvern's body with a very fine and otherwise invisible coating of it flare up bright yellow. In this state, the mold becomes far more volatile and explodes when it impacts virtually anything. The method in which this slime mold congregates on young Brachydios has not yet been determined, but it is generally believed that its explosions release countless spores that are sent long distances due to the blast. These blasts, combined with the very wide range of habitats in which the Brachydios is found, allows this mold to spread over great distances. Some scholars even believe that the mold may be able to grow in other environments, but that the shell of the Brachydios is the catalyst that makes it volatile. This theory has yet to be proven. In the Val Harbor region, Brachydios have learned to use their horns to make a massive slime puddle that can kill prey and any other monster that doesn't have protection against it."/>
+            <BoxView/>
+            <Label Text="Usually, the slime mold is living in harmony with Brachydios. Both spreading spores and exploding at the same time but the slime mold remains dormant on a surface even after exploding. If something like crustal movement or eruptions happens then the long dormant slime mold becomes active again. This long dormant slime mold has accumulated power while being dormant and has massive explosive power. This special slime mold is used for sex appeal, showing off a Brachydios's strength. This slime mold is the reason why some Brachydios go to or visit the Ingle Isle. Powerful individuals that gain this new powerful explosive slime become Raging Brachydios and this slime mold seems to be related to the reason why those Brachydios get so big."/>
+            
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="raging.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Raging Brachydios" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="evangelion1.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Evangelion1 Brachydios" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="iceblast.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Iceblast Brachydios" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

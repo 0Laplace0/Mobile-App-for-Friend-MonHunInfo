@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Nergigante"
+             Title="Nergigante"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="nergigante.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Nergigante is a dragon with a bristly appearance. It is covered in spikes that constantly regrow as they're broken off. It has two massive horns similar to a bull. The monster's hide is primarily black with purple and orange accents. Nergigante is constantly regenerating its skin as it attacks and is struck by hunters. It will slowly grow white spikes on certain body parts, which harden over time. Hunters must try to break the white spikes before they harden. Once they have hardened, its attacks deal more damage. These spikes are white in color when they regrow, but will turn black if left to harden. Once these spikes have hardened, they will deal more damage to foes and repel attacks."/>
+            <BoxView/>
+            <Label Text="These spikes will also be launched from Nergigante's body when it performs certain attacks, giving these attacks more range and making them more dangerous. Additionally, the hardened spikes require higher sharpness on melee weapons than normal to prevent bouncing off. When all possible body parts have hardened spikes, Nergigante will perform a special attack. It will briefly hover in the air, before crashing down. This will break the spikes on all body parts."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Nergigante is an extremely aggressive monster that will continue to fight even if it means harming its own body, and will only become more ferocious as it is injured and pushed further into a corner. It'll attack anything without hesitation, especially if a creature dares attack it first. Nergigante is particularly ferocious towards other Elder Dragons, actively hunting and feeding on them to gain massive amounts of energy; it has been theorized that Nergigante may even be one of nature's ways of keeping them in check. Because of this, it will get into turf wars with Elder Dragons such as Kushala Daora, Teostra, and Lunastra, while also possessing enough strength to overpower them. Unlike most Elder Dragons, Nergigante does not have elemental abilities, instead choosing to overwhelm its opponents and prey through sheer aggression and brute force. Despite being an Elder Dragon, Nergigante can become fatigued during battle."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Covering Nergigante's head, arms, tail, and wings are small spikes that break easily with enough damage. These spikes are believed to be made of a material similar to enamel and can break in a number of ways, though they mostly break from the sheer force of Nergigante's attacks. Unlike other Elder Dragons that use elemental abilities to survive, Nergigante uses brute strength to take on its prey. The force from some of its attacks is enough to send a hunter flying as well as breaking the spikes on its body. From it injuring itself with its own attacks, one would think that's a disadvantage to the Elder Dragon, but Nergigante has a special ability. Nergigante has extreme regenerative abilities that allow it to regrow lost spikes, up to 1800 of them, in mere seconds. Researchers theorize that this regenerative process starts when its spikes have taken a certain amount of damage, and it is said that it can regrow them an infinite number of times. From these new spikes growing recently, they are still young and white, making them vulnerable to attacks, but they will harden and turn black if they're left to oxidize in the air. When all the spikes on its body turn black and their weight becomes too much for Nergigante to carry, it will perform a devasting attack that can easily kill most foes in a single blow to replace them all at once. It also seems to have the ability to sense highly pure bioenergy."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="ruiner.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Ruiner Nergigante" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

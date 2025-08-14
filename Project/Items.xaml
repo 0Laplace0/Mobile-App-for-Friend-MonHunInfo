@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Items"
+             Title="Items">
+
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Margin" Value="5,5"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="10" BackgroundColor="#222">
+
+            <!-- RESTORATION -->
+            <Frame BackgroundColor="#313131">
+                <Label Text="RESTORATION" FontAttributes="Bold" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
+            </Frame>
+
+            <!-- Potion -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="potion"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Potion" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Heal for 35 Health and take four seconds to "/>
+                        <Label Text="drink"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 1  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 8  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="            Buy : 66  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Mega Potion -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="megapotion"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Mega Potion" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Heal for 70 Health and take four seconds to "/>
+                        <Label Text="drink"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 16  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Max Potion -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="maxpotion"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Max Potion" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Heal for the entire Health pool and take "/>
+                        <Label Text="roughly one second to activate"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 23 "/>
+                            <Label Text="           Carry : 2  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 210  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="         Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Ancient Potion -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="ancientpotion"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Ancient Potion" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Heal for the entire Health pool and take "/>
+                        <Label Text="roughly one second to activate"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 5  "/>
+                            <Label Text="           Carry : 1  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 345  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Lifepowder -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="lifepowder"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Lifepowder" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Heals all Hunters and Allies in a moderate radius for 35 Health."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 4  "/>
+                            <Label Text="           Carry : 3  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 315  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Antidote -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="antidote"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Antidote" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Remove the Poison Status Effect. "/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 1  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 6  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="            Buy : 60  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Herbal Medicine -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="herbalmed"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Herbal Medicine" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Remove the Poison  Status Effect and restore"/>
+                        <Label Text="20 Health."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 25  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Herbal Powder -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="herbalpowder"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Herbal Powder" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Cures all Allies in a moderate radius of the "/>
+                        <Label Text="Poison Status Effect and restores 20 Health."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 16  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Energy Drink -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="energydrink"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Energy Drink" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Restore 25 Stamina and cancel the Sleep "/>
+                        <Label Text="Status Effect."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 6  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="           Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- ENHANCEMENT -->
+            <Frame BackgroundColor="#313131">
+                <Label Text="ENHANCEMENT" FontAttributes="Bold" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
+            </Frame>
+
+            <!-- Might Seed -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="mightseed"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Might Seed" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increase Raw (Physical) Attack Power by 10 "/>
+                        <Label Text="for 180 Seconds"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 140  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Demondrug -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="demondrug"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Demondrug" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increase Raw (Physical) Attack Power by 5."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 4  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 67  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Mega Demondrug -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="megademondrug"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Mega Demondrug" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increase Raw (Physical) Attack Power by 7."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 5  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 283  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Might Pill -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="mightpill"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Might Pill" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increase Raw (Physical) Attack Power by 25"/>
+                        <Label Text="for 20 seconds"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 4  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 280  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Demon Powder -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="demonpowder"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Demon Powder" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect :  boosts the Raw (physical) Attack Power of "/>
+                        <Label Text="all Hunters and Allies in a moderate radius by 10."/>
+                        <Label Text="This boost lasts for 180 seconds"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 4  "/>
+                            <Label Text="           Carry : 3  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 315  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Powercharm -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="demonpowder"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Powercharm" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Boosts Raw (physical) Attack Power by 6."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 5  "/>
+                            <Label Text="           Carry : 1  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 3600  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="     Buy : 36000  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Powertalon -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="powertalon"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Powertalon" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Boosts Raw (physical) Attack Power by 9."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 5  "/>
+                            <Label Text="           Carry : 1  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 6840  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="     Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Adamant Seed -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="adamantseed"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Might Seed" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increase Defense by 20 for 180 seconds "/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 110  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Armorskin -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="armorskin"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Armorskin" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increase Defense by 15."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 4  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 58  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="         Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Mega Armorskin -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="megaarmorskin"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Mega Armorskin" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increase Defense by 25."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 5  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 269  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Adamant Pill -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="adamantpill"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Adamant Pill" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increase  Defense by 30% for 20 seconds"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 4  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 260  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Hardshell Powder -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="hardshellpowder"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Hardshell Powder" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect :   Defense  of all Hunters and Allies in a "/>
+                        <Label Text="moderate radius by 20. This boost lasts for 180 "/>
+                        <Label Text="seconds"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 4  "/>
+                            <Label Text="           Carry : 3  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 315  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="       Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Armorcharm -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="hardshellpowder"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Armorcharm" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Boosts Defense by 12."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 5  "/>
+                            <Label Text="           Carry : 1  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 2400  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="     Buy : 24000  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Armortalon -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="armortalon"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Armortalon" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Boosts Defense by 18."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 5  "/>
+                            <Label Text="           Carry : 1  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 5040  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="     Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Immunizer -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="immunizer"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Immunizer" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Increases the Natural Recovery Up for "/>
+                        <Label Text="5 minutes."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 3  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 92  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Dash Juice -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="dashjuice"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Dash Juice" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Restore Stamina, raise maximum Stamina by 50,"/>
+                        <Label Text="50, and grant the Stamina Use Reduced Status Effect"/>
+                        <Label Text="for four minutes, reducing Stamina use by 25%."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 29  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Cool Drink -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="cooldrink"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Cool Drink" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Grant a buff that negates passive damage "/>
+                        <Label Text="from Extreme Heat caused by certain areas of the "/>
+                        <Label Text="Elder's Recess and the Elder Dragon aura of Lunastra."/>
+                        <Label Text="This effect lasts for 10 minutes"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 1  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 30  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : 300  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Hot Drink -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="hotdrink"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Hot Drink" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Grant a buff that negates damage from "/>
+                        <Label Text="Extreme Cold caused by the Hoarfrost Reach, and "/>
+                        <Label Text="lasts for 10 minutes."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 1  "/>
+                            <Label Text="           Carry : 5  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 25  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : 250  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- TOOLS -->
+            <Frame BackgroundColor="#313131">
+                <Label Text="TOOLS" FontAttributes="Bold" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
+            </Frame>
+
+            <!-- Flash Pod -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="flashpod"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Flash Pod" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : a Flash Pod will detonate in a bright flash."/>
+                        <Label Text="This will often blind a Monster with the Stun Status"/>
+                        <Label Text="Effect if it is close or looking in the"/>
+                        <Label Text="direction of the detonation."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 3  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 57  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Screamer Pod -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="screamerpod"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Screamer Pod" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : a Screamer Pod will detonate with a loud  "/>
+                        <Label Text="noise. This will often cause a burrowing Monster to "/>
+                        <Label Text="become incapacitated if it is close to the detonation"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 3  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 45  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Dung Pod -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="dungpod"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Dung Pod" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Upon impact with a Monster, it will detonate"/>
+                        <Label Text="and coat the target with a repellent smell. This will"/>
+                        <Label Text="often cause the Monster to flee the area."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 10  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell :20  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Smoke Bomb -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="smokebomb"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Smoke Bomb" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : This smoke cloud functions obscuring the "/>
+                        <Label Text="vision of Monsters caught inside and hiding any "/>
+                        <Label Text="Hunters. "/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 2  "/>
+                            <Label Text="           Carry : 3  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 44  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Farcaster -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="farcaster"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Farcaster" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : The Farcaster will immediately make the "/>
+                        <Label Text="Hunter invulnerable while a Wingdrake swoops down "/>
+                        <Label Text="to take them to the nearest Campsite."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 3  "/>
+                            <Label Text="           Carry : 1  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 30  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- TRAPS -->
+            <Frame BackgroundColor="#313131">
+                <Label Text="TRAPS" FontAttributes="Bold" FontSize="20" TextColor="White" HorizontalOptions="Center"/>
+            </Frame>
+
+
+            <!-- Tranq Bomb -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="tranqbomb"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Tranq Bomb" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : Tranq Bombs can effected by two bombs, a "/>
+                        <Label Text="Monster can be captured for the next 45 seconds, "/>
+                        <Label Text="and every successive tranquilizer extends the "/>
+                        <Label Text="duration by 100 seconds, with no upper limit."/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 3  "/>
+                            <Label Text="           Carry : 8  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 35  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="          Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Shock Trap -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="shocktrap"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Shock Trap" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : When a Large Monster enters this area, it will "/>
+                        <Label Text="be trapped for 10 seconds. While caught in a Trap, a "/>
+                        <Label Text="Monster can be captured if it is an a Weakened state"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 3  "/>
+                            <Label Text="           Carry : 1  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 160  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="        Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Pitfall Trap -->
+            <Frame BackgroundColor="#313131">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Image Source="pitfalltrap"  HeightRequest="70" WidthRequest="70"/>
+                    <StackLayout Padding="10">
+                        <Label Text="# Pitfall Trap" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                        <Label Text="Effect : When a Large Monster enters this area, it will "/>
+                        <Label Text="sink into the ground and be immobilized for 10 seconds. While caught in a Trap, a "/>
+                        <Label Text="Monster can be captured if it is an a Weakened state"/>
+                        <HorizontalStackLayout>
+                            <Label Text="Rarity : 3  "/>
+                            <Label Text="           Carry : 1  " HorizontalOptions="End"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Sell : 200  "/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10" HorizontalOptions="Start"/>
+                            <Label Text="        Buy : N/A  " HorizontalOptions="End"/>
+                            <Image Source="zenny"  HeightRequest="10" WidthRequest="10"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Rathalos"
+             Title="Rathalos"
+             BackgroundColor="#222">
+    
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="rathalos.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Rathalos are large, bipedal wyverns with a spiny, armored hide covering their body. Their outer shell features much brighter and more vibrant colors than that of their female counterpart, the Rathian. It is primarily bright red, with black markings throughout. Like the Rathian, Rathalos possess a flame sac which is used to produce deadly flaming projectiles from the mouth. The talons upon their feet are highly poisonous and are known to inflict toxic mortal wounds on larger prey. In addition, their long, thick tail features a heavy spiked club at the end. Rathalos' wing membranes feature ornate patterns which are likely used to attract potential mates."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Rathalos are highly territorial monsters, and as such, are aggressive towards intruders. They will chase away or attempt to kill any monster which may pose a threat to their land. While hunting, Rathalos will stalk prey from the air before swooping in for the kill. Once they have successfully brought down their prey, they will carry it away to eat in private, safe from scavengers or other large monsters which might attempt to steal the kill."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Rathalos often use fire balls to attack foes from both land and air. Rathalos are able to produce these fireballs due to it having multiple flame sacs. Aside from fire-balls, these wyverns can produce streams of fire similar to a flamethrower, utilizing them in a variety of ways, such as producing the flames to the ground backwards to forward in a line, as well as spewing a fire stream as it flies by its target. Rathalos have powerful hind legs, making them fast on the ground, as well as giving them the capability to launch devastating claw attacks from the air, often severely injuring its target. While in the air, they are also capable of diving to claw foes on the ground. A Rathalos' claws contain a potent toxin used to injure and sap the preys strength. Rathalos, like many others of its kind, has a powerful roar that they use to intimidate rivals and stun prey. Its bright red scales serve as camouflage in volcanic areas. The Wyvern is also noted for its considerable strength. As shown in World, the Rathalos is a capable fighter with enough strength to lift up some opponents and slam them onto the ground as if they were mere rag dolls."/>
+            
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="azure.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Azure Rathalos" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="silver.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Silver Rathalos" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="apexrathalos.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Apex Rathalos" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

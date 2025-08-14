@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Kushala"
+             Title="Kushala Daora"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="kushala.png" HeightRequest="200" WidthRequest="500"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Kushala Daora is a dragon with metallic skin. Its large wings connect at the base of its tail, making them seem even larger in proportion to its body. Two backward curving horns lie on either side of its head, blending in with the spikes that line its back. It has visible wind streaming around its body. Kushala has a slightly reddish nose, possibly a sign of rusting."/>
+            
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Kushala Daora can be observed drinking water in the Jungle and eating ore in the Jungle. Kushala Daora will shed its skin after it is rusted, although there are Rusted Kushala Daora that hasn't shed its skin recently. Kushala Daora is a naturally passive Elder Dragon, and will only attack when provoked or attacked."/>
+            
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Kushala Daora possesses some of the largest wings of any monster. It uses these to sail effortlessly in the air. It can hover off the ground and blast hunters with wind. It uses a special organ to produce its famous wind based-attacks and abilities. When hit with poison, its organ will be weak and its shield will disappear for a short period of time while fighting the toxins. Kushala Daora have tough, metal filled skin, but suffer from a severe weakness to poison, which can easily enter the bloodstream through cracks created in the skin. Kushala Daora must infrequently shed their trademark skin (which is made of an organic metal) as they grow. This can easily be spotted as the once shining silver scales will rust over due to oxidation with air. The most well-known ability about Kushala Daora is the storms it summons. These storms can easily destroy whole regions, varying from region to region. Kushala Daora can cause sandstorms, hurricanes, and snowstorms though it is unknown how."/>
+            
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="rusted.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Rusted Kushala" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="risenkushala.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Risen Kushala" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

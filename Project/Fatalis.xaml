@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Fatalis"
+             Title="Fatalis"
+             BackgroundColor="#222">
+    
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="fatalis.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Fatalis resembles a traditional European dragon, with a long, serpentine neck and tail, along with a pair of large, yet muscular wings. Its body is covered in rigid black scales and lined with white spines along its back. Its head features four backwards-facing horns and rows of enlarged teeth, and fin-like ears. Like many other monsters, Fatalis has a pale underbelly, and like most other Elder Dragons, it possesses six limbs. Its forelimbs are surprisingly thin, belying immense strength."/>
+            
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Not much is known about Fatalis' habits, but it is extremely hostile to all living creatures, especially humans, and will actively seek out opportunities to attack them. It also displays intelligence and even some form of sadism in some of its encounters with human hunters, such as with its tendency to melt hunters and their equipment to its hide to strengthen itself."/>
+            
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="The Fatalis is a powerful, unnatural beast. Fatalis's scales are extremely thick, while its shell is very durable. This is due to Fatalis melting the armor of its fallen prey on its shell, increasing its protection against some attacks. Fatalis doesn't seem to have very good eyesight, though this maybe partially be due to what its eyes are made of. Creepily, a Fatalis's eyes are made out of crystals. It is unknown how the Fatalis is able to see, considering this eerie feature. A Fatalis's wing membrane is flexible, but as hard as metal. From this, Fatalis's wings don't break very easily, allowing it to fly at high speeds and support itself as it becomes airborne. Even on the ground, Fatalis is able to walk on all fours and rush prey at shocking speeds with sheer power behind its bulk. The most powerful feature is its powerful fiery breath. This fire is some of the strongest fire breath out of all monsters and can kill most enemies almost instantly. Recent encounters have revealed that Fatalis possess control over fire on par with Teostra and Lunastra. Its fire breath extends well beyond the length and height of the already large dragon and it can also release a reactive powder as well. This powder is more expansive than Teostra's and can be ignited. The exact workings of Fatalis's explosive attacks is still unknown. The Fatalis also possesses the extremely rare and deadly Dragon Element."/>
+            
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="crimson.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Crimson Fatalis" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="whitefatalis.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="White Fatalis" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

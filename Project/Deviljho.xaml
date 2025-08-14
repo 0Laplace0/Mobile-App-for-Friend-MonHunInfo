@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Deviljho"
+             Title="Deviljho"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="deviljho.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Deviljho is a very large, bipedal Brute Wyvern characterized by its uniform forest green coloration and muscular upper body. Its thick hide is littered with short, jagged spines that reach a maximum height along the back and tail. Deviljho has a narrow snout with a large lower jaw, covered in multiple rows of teeth spreading outwards from the mouth. It has massive, powerful hind legs, but tiny, poorly developed forelegs that it rarely utilizes. When enraged, Deviljho's back and shoulder muscles swell considerably revealing scars. During this period, areas of its skin will take on a bright red coloration."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Deviljho is a nomadic monster, prone to wandering vast distances in search of prey. Its status as a super-predator allows it to overtake the territory of any monster that stands in its path. Because of its extreme metabolism and equally extreme need for sustenance to survive, Deviljho is always in search of food sources, and will attempt to kill and eat anything on sight. It is known to be cannibalistic and is also prone to eating prey alive in order to waste as little time as possible in replenishing its energy."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Deviljho are endowed with heavy, powerful muscles, giving them the strength to overpower their prey. Their mouths are filled with rows upon rows of sharp, jagged teeth. This allows the beast to tear flesh from a victim with ease. This feature also allows them to attack from a distance, using their giant lower jaw as a crude shovel, they can fling boulder-sized clumps of earth at their quarry. Their eyes are small and simple, suggesting their vision is rather poor, but their other senses such as smell may compensate for this. Their tails are long and powerful, but their main feature of note is its breath attack. At will they can breathe from their mouths a stream of a mysterious energy known as dragon. If their muscles swell, the skin will be stretched out to reveal the less flexible and tougher fibrous tissues that lie underneath the upper layer of skin, opened up by old scars."/>
+            <BoxView/>
+            <Label Text="When enraged, almost all of their muscles swell and they become both faster and stronger. At this point, old battle scars become visible on the outer membrane of their skin. During this time, the muscles (now swollen) are tougher than they would be otherwise, but the underside of their stomachs become more vulnerable to attack."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="savage.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Savage Deviljho" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="aberrant.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Aberrant Deviljho" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="heavenlyking.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Heavenly King Deviljho" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

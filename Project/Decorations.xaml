@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Decorations"
+             Title="Decorations"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+    </ContentPage.Resources>
+
+
+    <VerticalStackLayout Spacing="10" Padding="20">
+        <ScrollView>
+            <VerticalStackLayout Padding="10" Spacing="10" BackgroundColor="#222">
+
+                <!-- Apothecary Mantle -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <StackLayout Padding="10">
+                            <Label Text="# Apothecary Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Effect Duration :      60s" FontAttributes="Bold" HorizontalOptions="End"/>
+                            <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                            <Label Text="Increases the probability of triggering status"/>
+                            <Label Text="buildup when attacking with weapons that"/>
+                            <Label Text="induce abnormal statuses."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Bandit Mantle -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="apothecary" HeightRequest="70" WidthRequest="70"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Bandit Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                            <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                            <Label Text="Causes monsters to drop rare trade-in items"/>
+                            <Label Text="when you attack them."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Challenger Mantle -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="apothecary" HeightRequest="70" WidthRequest="70"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Challenger Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Effect Duration :    180s" FontAttributes="Bold" HorizontalOptions="End"/>
+                            <Label Text="Recharge Times : 210s" FontAttributes="Bold" HorizontalOptions="End"/>
+                            <Label Text="Prompts monsters to target you more often"/>
+                            <Label Text="and makes them easier to lure. The effect"/>
+                            <Label Text="expires if you are attacked."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Dragonproof Mantle -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="apothecary" HeightRequest="70" WidthRequest="70"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Dragonproof Mantle" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Effect Duration :    120s" FontAttributes="Bold" HorizontalOptions="End"/>
+                            <Label Text="Recharge Times : 300s" FontAttributes="Bold" HorizontalOptions="End"/>
+                            <Label Text="Reduces Dragon damage. Nullifies"/>
+                            <Label Text="Dragonblight, and powers up your weapon's"/>
+                            <Label Text="dragon properties."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                
+            </VerticalStackLayout>
+        </ScrollView>
+
+    </VerticalStackLayout>
+</ContentPage>

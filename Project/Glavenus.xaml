@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Glavenus"
+             Title="Glavenus"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="glavenus.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Every Glavenus is male as the females are never seen in-game. Glavenus is a large Brute Wyvern with dark red scales covering his body. Two rows of blue, bony plates run along his back, going from the eyes to the tail. His underside is more of a cream color. The unique feature of Glavenus is his huge, sword-like tail. The tail is originally the same color as his back plates, but it will turn a rusty color or a fiery red during the battle. His hind legs are powerful and muscular, while his arms are much smaller and mostly useless in combat. The face and jaws are covered in sturdy plating, particularly resembling the head of a Carnotaurus"/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Glavenus are relentless, aggressive predators with surprising skills in battle. These skills have made hunters consider them to be one of the most intelligent Brute Wyverns around if not necessarily the strongest. Glavenus will drag its tail on the ground and roar at the foe. By dragging its tail, it shows the threat that it uses fire as a weapon to enemies. Their territory is commonly marked by large gashes on the ground, produced when they scrape their tails along solid objects."/>
+            
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Glavenus's most striking feature is its blade-like tail. The blade-like tail is used in many ways by Glavenus such as keeping the body balanced while on the move, but its primary use is for attacking. This tail can cut prey in two with a single slash, crack the ground easily, and even block some attacks. Though its tail is already a powerful weapon, it can become more dangerous once heated up. By grinding its tail on the ground or nearby hard surfaces violently, it can ignite the tail, heating it up to high temperatures. While its tail is heated all of its tail-based attacks become more deadly, also allowing it to cut through objects much more easily."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="acidic.png" HeightRequest="200" WidthRequest="400"/>
+            <Label Text="Acidic Glavenus" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.RandomEvent"
+             Title="RandomEvent"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BackgroundColor" Value="#313131"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowSpacing="50" Padding="30" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="1"
+            x:Name="RandomImageMonster" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+        <Image Grid.Row="2"
+            x:Name="RandomImageWeapons" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+        <Button Grid.Row="3"
+            Text="Random" Clicked="RandomImage_Click" WidthRequest="200" HeightRequest="80" FontSize="30" BackgroundColor="#737373"/>
+        
+    </Grid>
+
+</ContentPage>

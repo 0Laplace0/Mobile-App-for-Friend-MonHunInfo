@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Lagiacrus"
+             Title="Lagiacrus"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="lagiacrus.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="When a Lagiacrus is fully sunbathed, it turns a dry grayish-blue color and its dermal spikes turn brown. When it returns to the water, Lagiacrus regains a striking deep blue color and its spikes return to their original color of a very light beige."/>
+            
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Lagiacrus are highly aggressive Leviathans considered the Lord of the Sea. To hunt down and capture prey, Lagiacrus will swim in a circle to form a whirlpool. These whirlpools are used to suck up fish and other prey so Lagiacrus can shock them to death before feeding on their quarry. These whirlpools are occasionally used to sink boats and ships."/>
+            
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Lagiacrus is a large, blue aquatic leviathan that is adapted to life in tropical waters. Its hood-like structure, along with the aid of its limbs and tail, allow it to swim through the water quickly. Lagiacrus are able to stay submerged underwater for up to half a day without coming up for air. The large dorsal spikes on its back are used to release its electric attacks alongside a possible electro sac below each spike. Its able to release this electricity by contracting its cells at high speeds inside its muscles. When it does this some of the electricity actually combines with some of the mucus in its mouth, allowing it to spit out lightning projectiles from its mouth. In other regions, the Lagiacrus is able to bend the lightning it creates around it, yet how it does this is still unknown."/>
+            
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="abyssal.png" HeightRequest="200" WidthRequest="200"/>
+            <Label Text="Abyssal Lagiacrus" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="ivory.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Ivory Lagiacrus" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

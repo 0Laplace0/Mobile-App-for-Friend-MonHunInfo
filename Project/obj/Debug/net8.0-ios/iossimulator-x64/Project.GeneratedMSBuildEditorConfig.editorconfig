@@ -1,0 +1,199 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Project
+build_property.ProjectDir = C:\Users\kritp\source\repos\Project\Project\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/kritp/source/repos/Project/Project/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Barioth.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Barioth.xaml
+build_metadata.AdditionalFiles.TargetPath = Barioth.xaml
+build_metadata.AdditionalFiles.RelativePath = Barioth.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Brachydios.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Brachydios.xaml
+build_metadata.AdditionalFiles.TargetPath = Brachydios.xaml
+build_metadata.AdditionalFiles.RelativePath = Brachydios.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Decorations.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Decorations.xaml
+build_metadata.AdditionalFiles.TargetPath = Decorations.xaml
+build_metadata.AdditionalFiles.RelativePath = Decorations.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Deviljho.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Deviljho.xaml
+build_metadata.AdditionalFiles.TargetPath = Deviljho.xaml
+build_metadata.AdditionalFiles.RelativePath = Deviljho.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Diablos.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Diablos.xaml
+build_metadata.AdditionalFiles.TargetPath = Diablos.xaml
+build_metadata.AdditionalFiles.RelativePath = Diablos.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Fatalis.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Fatalis.xaml
+build_metadata.AdditionalFiles.TargetPath = Fatalis.xaml
+build_metadata.AdditionalFiles.RelativePath = Fatalis.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Glavenus.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Glavenus.xaml
+build_metadata.AdditionalFiles.TargetPath = Glavenus.xaml
+build_metadata.AdditionalFiles.RelativePath = Glavenus.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Items.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Items.xaml
+build_metadata.AdditionalFiles.TargetPath = Items.xaml
+build_metadata.AdditionalFiles.RelativePath = Items.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Kushala.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Kushala.xaml
+build_metadata.AdditionalFiles.TargetPath = Kushala.xaml
+build_metadata.AdditionalFiles.RelativePath = Kushala.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Lagiacrus.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Lagiacrus.xaml
+build_metadata.AdditionalFiles.TargetPath = Lagiacrus.xaml
+build_metadata.AdditionalFiles.RelativePath = Lagiacrus.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/MenuPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.MenuPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuPage.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Mizutsune.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Mizutsune.xaml
+build_metadata.AdditionalFiles.TargetPath = Mizutsune.xaml
+build_metadata.AdditionalFiles.RelativePath = Mizutsune.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Nargacuga.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Nargacuga.xaml
+build_metadata.AdditionalFiles.TargetPath = Nargacuga.xaml
+build_metadata.AdditionalFiles.RelativePath = Nargacuga.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Nergigante.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Nergigante.xaml
+build_metadata.AdditionalFiles.TargetPath = Nergigante.xaml
+build_metadata.AdditionalFiles.RelativePath = Nergigante.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Rajang.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Rajang.xaml
+build_metadata.AdditionalFiles.TargetPath = Rajang.xaml
+build_metadata.AdditionalFiles.RelativePath = Rajang.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/RandomEvent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.RandomEvent.xaml
+build_metadata.AdditionalFiles.TargetPath = RandomEvent.xaml
+build_metadata.AdditionalFiles.RelativePath = RandomEvent.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Rathalos.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Rathalos.xaml
+build_metadata.AdditionalFiles.TargetPath = Rathalos.xaml
+build_metadata.AdditionalFiles.RelativePath = Rathalos.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/RathalosBio.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.RathalosBio.xaml
+build_metadata.AdditionalFiles.TargetPath = RathalosBio.xaml
+build_metadata.AdditionalFiles.RelativePath = RathalosBio.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/RathalosSub.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.RathalosSub.xaml
+build_metadata.AdditionalFiles.TargetPath = RathalosSub.xaml
+build_metadata.AdditionalFiles.RelativePath = RathalosSub.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Rathian.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Rathian.xaml
+build_metadata.AdditionalFiles.TargetPath = Rathian.xaml
+build_metadata.AdditionalFiles.RelativePath = Rathian.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Skills.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Skills.xaml
+build_metadata.AdditionalFiles.TargetPath = Skills.xaml
+build_metadata.AdditionalFiles.RelativePath = Skills.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/SpecializedTools.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.SpecializedTools.xaml
+build_metadata.AdditionalFiles.TargetPath = SpecializedTools.xaml
+build_metadata.AdditionalFiles.RelativePath = SpecializedTools.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Tigrex.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Tigrex.xaml
+build_metadata.AdditionalFiles.TargetPath = Tigrex.xaml
+build_metadata.AdditionalFiles.RelativePath = Tigrex.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Velkhana.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Velkhana.xaml
+build_metadata.AdditionalFiles.TargetPath = Velkhana.xaml
+build_metadata.AdditionalFiles.RelativePath = Velkhana.xaml
+
+[C:/Users/kritp/source/repos/Project/Project/Zinogre.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Project.Zinogre.xaml
+build_metadata.AdditionalFiles.TargetPath = Zinogre.xaml
+build_metadata.AdditionalFiles.RelativePath = Zinogre.xaml

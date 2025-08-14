@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Mizutsune"
+             Title="Mizutsune"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="mizutsune.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="All Mizutsune are male as the females are not seen. Like most other Leviathans, Mizutsune has a long, slender body. However, he is one of the few Leviathans to actually have fur on his body. This dark purple fur covers his chest, underbelly, legs and tail. His scales are light colored and resemble those of a fish. His head has a long snout and is beautifully adorned by many fin-like appendages. These fins are pink with yellow markings, and they can also be seen on his back and tail. His feet are said to be quite different from other Leviathans and allow Mizutsune to move swiftly on land. The females are said to be dull in color with shorter fins and dark black fur."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Mizutsune are rather calm in nature until provoked. They prefer to be left alone resting near large bodies of water, while covered in their special secretions. They prefer to avoid confrontations. However, they will defend themselves if they need to. Once a threat has left, Mizutsune won't chase after the threat but will instead let it go. Though Mizutsune are usually calm, males are known to turn aggressive during Breeding Season. Male Mizutsune become aggressive or even berserk during their Breeding Season. In this season, it is not a good idea to go fishing for they are known to injure people due to their blind rage. Male Mizutsune have large fins and are able to flash their fins red to show emotion to the female Mizutsune, in order to attract them."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Mizutsune's most unique adaption is its ability to produce bubbles. It is able to produce the bubbles by using special fluid secretions, produced from its own body along with water, and rubbing its hairs in the secretions. These stiff yet soft purple hairs are found on its chest, tail, legs, and sides. The hairs are used for sliding on the fluids it produces, spreading the fluids, and even using the fluids to produce more bubbles. Mizutsune can also breath these bubbly fluids from its mouth. It is known to use the bubbles it produces both offensively and defensively in battle. It uses the bubbles to help it move faster and to make it more flexible in battle, while simultaneously impeding the movement of any foes. In order to stop itself quickly while moving, Mizutsune has special hook-like claws that allow it to stop sliding quickly to face threats and not leave itself open. Despite Mizutsune's strange appearance, the fins it has actually act as receptors for detecting the presence of predators and prey coming through vibrations in the secretions. Like a snake, Mizutsune's teeth are recurved to prevent prey from escaping easily. Its jaws are even designed like a snake to an extent, even being able to open its mouth wide and swallow some large prey."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="soulseer.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Soulseer Mizutsune" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="apexmizutsune.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Apex Mizutsune" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="thunderbubble.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Thunderbubble Mizutsune" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

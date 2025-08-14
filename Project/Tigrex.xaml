@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Tigrex"
+             Title="Tigrex"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="tigrex.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Tigrex is a large, quadrupedal wyvern characterized by its massive head and jaws, powerful limbs and striking yellow/blue striped coloration. The top of its head is tipped with a pair of horn-like ears, and its segmented tail ends with a spiny protrusion."/>
+            
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Tigrex will usually attempt to intimidate would-be attackers with an ear-splitting roar. If combat becomes intense enough, it will flush blood to its forelimbs, face, and eyes, in order to give its skin a bright-red glow as an effort to further intimidate attackers."/>
+            
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Tigrex is a rare breed indeed, a creature adapted to survive in both the extreme heat of the desert and the frigid air of the snowy mountains. Tigrex's wings have not devolved into the wings most Flying Wyverns are known for. This allows Tigrex to arch themselves upward to get a better vantage point of their surroundings, and run much more efficiently than other wyvern such as Rathalos, which are prone to tripping and poor maneuverability on ground. Tigrex are incredibly fast, running up to speeds of 50 km and often giving chase before leaping on top of prey and biting into the helpless creature's neck. Tigrex do not possess flame sacs like many other wyverns, but make up for this by having an incredibly strong organ that holds and controls sound to a deadly level into a strong roar that will literally knocks hunters too close to the creature off their feet. Tigrex's strong tail has a spiked tip and is often used as a whip-like weapon, most notably during its 360 spin attack. Tigrex's forearms have bat-like wings that it can use to glide from high elevations, or ride updrafts for greater distance. Sometimes, on rare occasions, hunters report that when they're fighting two Tigrex at the same time, one of the Tigrex would flap its wings to fly for a short amount of time. Tigrex's most unusual ability lies in its blood vessels. When the creature is enraged, blood rushes to its extremities and head to keep the creature from hurting,cramping or blacking out during its fits of deadly rage. This has led to many an unfortunate hunter's death, as it would appear that Tigrex has limitless stamina. Thankfully this is not the case, and after periods of extended rage, Tigrex must find a place to rest or it may risk suffering major injury, hyperventilating or passing out. It is also possible that large amounts of adrenaline pump through the Tigrex's body, making it faster and more aggressive. However, during this enraged state, Tigrex's body becomes weaker to attacks and is more bound to injures. Due to its orange and blue colouration, it may hide in a desert oasis to ambush prey. Unfortunately this colour renders it unable to hunt in plain sight in snowy regions, forcing it to hide to attack prey. Male Tigrex have larger horns than females."/>
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="brute.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Brute Tigrex" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

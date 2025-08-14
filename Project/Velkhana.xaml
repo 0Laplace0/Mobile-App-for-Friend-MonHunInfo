@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Velkhana"
+             Title="Velkhana"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="velkhana.png" HeightRequest="200" WidthRequest="400"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Velkhana is a traditional dragon with the slim, upright body structure of Elder Dragons like Kushala Daora. Its scales and shell are a unique crystalline blue. Its head has a tiara-like crown of small horns. It summons ice to cover its wings, limbs, and tail. Its thin, lance-like tail is highly flexible and can jab at enemies."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Like many Elder Dragons, Velkhana are highly territorial and will viciously attack any intruders. They are also known to freeze smaller creatures and leave their frozen corpses around its domain as a warning to would-be trespassers."/>
+
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Velkhana has the same basic shape as most other elder dragons: four legs and two wings on its back. Velkhana's wings are massive, estimated to be about twenty meters long, and these extra limbs aid it in its flight. Covering Velkhana's entire body is overlapping feather-like scales that one might immediately think is how Velkhana keeps itself warm in the cold environments it inhabits, but that isn't the case. At the very tip of its wings is a small amount of fat that allows cold air to enter its body and, much like waterfowl, it uses countercurrent heat exchange to keep itself warm in such environments, losing little heat in the process. Unlike other elder dragons, Velkhana rarely ever uses its claws in combat since they play an important role in its movements. Velkhana's hook-like claws are used to grip the icy floor of its habitat, preventing Velkhana from slipping on the ice and snow that litters its turf. Rather than using its claws, Velkhana primarily uses its spear-like tail in combat against threats, impaling its foes multiple times with great speed and precision. Although countless scales adorn Velkhana's entire body, the blue ones on its body aren't actually scales. These blue shards on its body are a kind of ore that is similar to volcanic glass, which Velkhana uses to control its legendary icy abilities. Often called the Iceborne Wyvern, Velkhana uses this special ore to control the supercooled water inside of its body, and it's capable of breathing said water out of its mouth, rapidly freezing any objects or creatures caught within the blast. Not only does Velkhana breathe supercooled water out of its mouth, but it also secretes that water from the gaps between its scales.[18] The supercooled water that it secretes is used for creating any icy armor that further protects its body from an enemy's attacks, and, as it fights, it'll leave behind pools of a freezing mist around the arena. If any of Velkhana's breath-based attacks come in contact with this mist, it'll create ice spires that will either block an enemy's escape routes or cause large blocks of ice to fall out of the sky onto nearby enemies. Velkhana can even regrow its tail by using the supercooled water that it secretes."/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Skills"
+             Title="Skills"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <StackLayout>
+            <VerticalStackLayout Spacing="10" Padding="20">
+                <!-- Tabs -->
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Button Text="ALL SKILLS" BackgroundColor="#464646" TextColor="White" FontSize="14" WidthRequest="300" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </StackLayout>
+
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <VerticalStackLayout Padding="20" Spacing="10" BackgroundColor="#222">
+
+                <!-- Affinity Sliding -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Affinity Sliding" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Sliding increases your affinity for a short time."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Agitator -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Agitator" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases attack power and affinity when"/>
+                            <Label Text="large monsters become enraged."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Airborne -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="ex"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Airborne" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the damage caused by jumping attacks."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Artillery -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="grey"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Artillery" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Strengthens explosive attacks like Gunlance shells,"/>
+                            <Label Text="Wyvern's fire, charge blade phial attacks and sticky"/>
+                            <Label Text="ammo."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Attack Boost -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Attack Boost" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases attack power. Also increases affinity at "/>
+                            <Label Text="higher levels."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Blast Attack -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="copper"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Blast Attack" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the rate of blast buildup."/>
+                            <Label Text="(Elemental buildup has a maximum limit)"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Blast Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="copper"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Blast Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Grants protection against Blastblight."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Blight Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="purple"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Blight Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Grants protection against all elemental blights."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Bow Charge Plus -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="ex"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Bow Charge Plus" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases max bow charge by one."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Capacity Boost -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="grey"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Capacity Boost" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the gunlance's shell capacity and charge"/>
+                            <Label Text="blade's phial capacity."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Critical Boost -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="deepblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Critical Boost" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the damage of critical hits."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Critical Draw -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="deepblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Critical Draw" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases affinity when performing draw attacks."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Critical Eye -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="deepblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Critical Eye" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases Affinity."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Critical Element -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Critical Element" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases Elemental Damage when landing critical "/>
+                            <Label Text="hits"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Critical Status -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightgrey"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Critical Status" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases abnormal status effect damage when "/>
+                            <Label Text="landing critical hits"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Coalescence -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="purple"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Coalescence" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Temporarily enhances attacks after recovering "/>
+                            <Label Text="from blights or abnormal statuses."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Defense Boost -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="yellow"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Defense Boost" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases Defense. Also increases Elemental"/>
+                            <Label Text="Resistances at higher levels."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Divine Blessing -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="blue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Divine Blessing" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Has predetermined chance of reducing the damage you take."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Dragon Attack -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="deepred"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Dragon Attack" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the power of Dragon Attacks."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Dragon Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="deepred"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Dragon Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases Dragon Resistance. Also improves"/>
+                            <Label Text="Defense at higher levels."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Earplugs -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="white"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Earplugs" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Grants protection from large monsters' roars."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Evade Window -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Evade Window" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Extends the invulnerability period while evading."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Evade Extender -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Evade Extender" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increase evade distance."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Fire Attack -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Fire Attack" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the power of Fire Attacks"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Fire Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Fire Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases Fire Resistance Also improves Defense "/>
+                            <Label Text="at higher levels."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Flinch Free -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="grey"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Flinch Free" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Prevents knockbacks and other reactions to small "/>
+                            <Label Text="damage"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Focus -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="brown"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Focus" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the fill rate for weapons with gauges and"/>
+                            <Label Text="the charge rate for weapons with charge attacks."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Fortify -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Fortify" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases your attack and defense every time you"/>
+                            <Label Text="fall in battle, up to two times."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Free Elem/Ammo Up -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightgrey"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Free Elem/Ammo Up" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Unlocks your weapon's hidden element. Also "/>
+                            <Label Text="increases bowgun loading capacity (there's a cap"/>
+                            <Label Text="to loading capacity)"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Free Meal -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="brown"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Free Meal" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Gives you a predetermined chance of consuming"/>
+                            <Label Text="a food or drink item for free."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Guard -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="grey"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Guard" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Reduces knockbacks and stamina depletion when "/>
+                            <Label Text="guarding."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Handicraft -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="white"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Handicraft" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Extends the weapon sharpness gauge. However, "/>
+                            <Label Text="it will not increase the gauge past its maximum."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Health Boost -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightgreen"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Health Boost" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases health."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Heroics -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Heroics" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases attack power and Defense when health "/>
+                            <Label Text="drops to 35% or lower."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Horn Maestro -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="white"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Horn Maestro" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the effect duration of hunting horn "/>
+                            <Label Text="melodies."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Ice Attack -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="white"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Ice Attack" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the power of Ice Attacks."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Ice Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="white"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Ice Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases Ice Resistance Also improves Defense at"/>
+                            <Label Text="higher levels."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Item Prolonger -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="brown"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Item Prolonger" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Extends the duration of some item effects."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Latent Power -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Latent Power" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Temporarily increases affinity and reduced stamina "/>
+                            <Label Text="depletion when certain conditions are met."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Maximum Might -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Maximum Might" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases affinity when stamina is full for several "/>
+                            <Label Text="seconds. After activation, if stamina is used, the"/>
+                            <Label Text="effects will continue for a few seconds."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Mushroomancer -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="purple"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Mushroomancer" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Lets you digest mushrooms that would otherwise "/>
+                            <Label Text="be inedible and gain their advantageous effects."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Non-elemental Boost -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Non-elemental Boost" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Powers up non-elemental weapons you have "/>
+                            <Label Text="equipped."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Offensive Guard -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="white"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Offensive Guard" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Temporarily increases attack power after executing "/>
+                            <Label Text="a perfectly-timed guard."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Partbreaker -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="grey"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Partbreaker" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Makes it easier to break or sever parts of large "/>
+                            <Label Text="monsters."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Peak Performance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="red"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Peak Performance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases attack when your health is full."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Piercing Shots -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="blue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Piercing Shots" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the attack power of piercing ammo and "/>
+                            <Label Text="Dragon Piercer."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Poison Attack -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="purple"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Poison Attack" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increase the rate of poison buildup."/>
+                            <Label Text=""/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Poison Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="purple"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Poison Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Grants protection against the effects of poison."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Power Prolonger -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="brown"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Power Prolonger" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Allows long swords, dual blades, insect glaives, "/>
+                            <Label Text="switch axes and charge blades to stay powered up "/>
+                            <Label Text="longer."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Quick Sheath -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="brown"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Quick Sheath" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Speeds up weapon sheathing."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Recovery Speed -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightgreen"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Recovery Speed" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Speeds recovery for temporary damage"/>
+                            <Label Text="(the red portion of the health gauge)."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Recovery Up -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightgreen"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Recovery Up" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the amount restored when restoring "/>
+                            <Label Text="Health."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Resentment -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="deepred"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Resentment" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases attack when you have recoverable "/>
+                            <Label Text="damage (the red portion of your health gauge)."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Sleep Attack -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Sleep Attack" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Reduces the duration of sleep."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Sleep Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Sleep Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the rate of sleep buildup."/>
+                            <Label Text="(Elemental buildup has a maximum limit)"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Slugger -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="yellow"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Slugger" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Make it easier to dizzy monsters."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Speed Eating -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="yellow"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Speed Eating" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases meat-eating and item consumption "/>
+                            <Label Text="speed."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Speed Sharpening -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="brown"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Speed Sharpening" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Speeds up weapon sharpening when using a "/>
+                            <Label Text="whetstone."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Spread/Power Shots -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="green"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Spread/Power Shots" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the attack power of spread ammo and "/>
+                            <Label Text="power shot arrows."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Stamina Surge -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="brown"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Stamina Surge" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Speeds up stamina recovery."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Stamina Thief -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="lightblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Stamina Thief" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases certain attacks' ability to exhaust "/>
+                            <Label Text="monsters."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Stun Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="yellow"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Stun Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Reduces stun duration."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Thunder Attack -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="yellow"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Thunder Attack" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="ncreases the power of Thunder Attacks."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Thunder Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="yellow"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Thunder Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases Thunder Resistance Also improves "/>
+                            <Label Text="Defense at higher levels."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Tool Specialist -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="brown"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Tool Specialist" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Reduces the Recharge time for specialized tools."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Tremor Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="grey"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Tremor Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Grants protection against ground tremors."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Water Attack -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="blue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Water Attack" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the power of Water Attacks."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Water Resistance -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="blue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Water Resistance" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases Water Resistance Also improves Defense "/>
+                            <Label Text="at higher levels."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Weakness Exploit -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="deepblue"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Weakness Exploit" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Increases the affinity of attacks that exploit a "/>
+                            <Label Text="monster's weak spot."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Wide-Range -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="white"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Wide-Range" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Allows the effects of certain items to also affect "/>
+                            <Label Text="nearby allies."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Windproof -->
+                <Frame BackgroundColor="#313131">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                        <Image Source="white"  HeightRequest="50" WidthRequest="50"/>
+                        <StackLayout Padding="10">
+                            <Label Text="# Windproof" FontAttributes="Bold" FontSize="14" TextColor="White"/>
+                            <Label Text="Grants protection against wind pressure."/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                
+            </VerticalStackLayout>
+        </ScrollView>
+        
+    </StackLayout>
+
+</ContentPage>

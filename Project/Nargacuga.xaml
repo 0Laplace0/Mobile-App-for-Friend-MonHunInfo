@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project.Nargacuga"
+             Title="Nargacuga"
+             BackgroundColor="#222">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="#737373"/>
+            <Setter Property="FontFamily" Value="Montserrat"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="LineBreakMode" Value="WordWrap"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="nargacuga.png" HeightRequest="200" WidthRequest="200"/>
+
+            <Label Text="Physiology" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="It has black scales, black fur and nightmarish red eyes, giving it the look and style of a predatory black panther. Its dark, feral appearance suggests that it may mainly be a nocturnal predator. This wyvern has been sighted within the Great Forest at both night and daytime, the Jungle, and also the Old Swamp. When it's in Rage Mode, its eyes glow bright red and leave a trail of reddish lines when Nargacuga moves. Also, its tail erects large spikes which can be flung and linked up with its attacks for devastating hits. Their vertebrae and tail muscles are extremely flexible, making the tail of Nargacuga also prehensile. Its tail is also its most powerful weapon. The scales at the end of the tail can also be shaken to produce rattling sounds similar to that of a rattlesnake."/>
+
+            <Label Text="Behavior" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="Nargacuga is a careful and cautious monster. It is very easy for it to sneak up to a hunter. Nargacuga lives in dark places that it has adapted to. It rests on high trees that are hard to reach, or maybe can't be reached, so hunters can't catch it by surprise for capturing it. Nargacuga will wake up when hunters are right in front of the tree due to its natural senses."/>
+            
+            <Label Text="Biological" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+            <Label Text="The Nargacuga is well adapted to heavily forested areas. Nargacuga is covered in black scales and fur so they can camouflage with the shadows. The reason why they don't have a shell is because with their hairs, Nargacuga are a lot more agile and don't have to worry about being slowed down by their shell while chasing down prey. To help Nargacuga cut through branches and vines in its environment, it has evolved wing blades that are used as both tools and as weapons. One slash from these blades can easily kill medium size prey. Though it has wings, Nargacuga prefer to glide despite being capable of flying in the air. The Nargacuga's main weapon is its tail. The tail is half of its length and strong enough to break the bone of large monsters. If that wasn't enough, its tail is covered in many fine spikes used to deliver fatal blows in one swing or even shot at enemies from a distance. When Nargacuga's eyes glow red, it is its blood vessels that give it this color, which is used as a kind of mimicry."/>
+            <BoxView/>
+            <Label Text="In the Mezeporta district, there are reports of another species of Nargacuga. These Nargacuga have poisonous spikes on their tail and a very different enraged state. This state is neon in color with blue eyes, leaving behind an illusion or afterimage with each movement they take. Much like White Gale Nargacuga, this Nargacuga can produce cutting winds to attack foes."/>
+
+            <Label Text="Variant and Subspecies" FontAttributes="Bold" FontSize="25" TextColor="White"/>
+
+            <Image Source="greennargacuga.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Green Nargacuga" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="silverwind.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Silverwind Nargacuga" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+            <Image Source="lucent.png" HeightRequest="200" WidthRequest="300"/>
+            <Label Text="Lucent Nargacuga" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20" TextColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
